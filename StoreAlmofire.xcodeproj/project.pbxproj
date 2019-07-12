@@ -3,25 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67F9E8421CEA68F39C4A8F5F /* Pods_StoreAlmofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E129CF9D13043143911AD /* Pods_StoreAlmofire.framework */; };
+		C013868922D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */; };
+		C013868B22D119C900BA8BAD /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013868A22D119C900BA8BAD /* OrdersViewController.swift */; };
+		C0166CC222D3909300FFA781 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0166CC122D3909300FFA781 /* StoreViewController.swift */; };
+		C0166CC422D3993600FFA781 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */; };
+		C017C05722D7A8A40057F766 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017C05622D7A8A40057F766 /* Singleton.swift */; };
+		C018D57422CF97490022B621 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018D57322CF97490022B621 /* CategoryViewController.swift */; };
 		C046597D22BF925300C8BF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046597C22BF925300C8BF59 /* AppDelegate.swift */; };
-		C046597F22BF925300C8BF59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046597E22BF925300C8BF59 /* ViewController.swift */; };
 		C046598222BF925300C8BF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C046598022BF925300C8BF59 /* Main.storyboard */; };
 		C046598422BF925500C8BF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C046598322BF925500C8BF59 /* Assets.xcassets */; };
 		C046598722BF925500C8BF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C046598522BF925500C8BF59 /* LaunchScreen.storyboard */; };
+		C046598F22BFB34500C8BF59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046598E22BFB34500C8BF59 /* LoginViewController.swift */; };
+		C046599122BFD7FC00C8BF59 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046599022BFD7FC00C8BF59 /* InitViewController.swift */; };
+		C046599322BFEABB00C8BF59 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046599222BFEABB00C8BF59 /* TableViewCell.swift */; };
+		C05B3C4822C10F25009CD57D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B3C4722C10F25009CD57D /* RegisterViewController.swift */; };
+		C05B3C4A22C166D2009CD57D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B3C4922C166D2009CD57D /* ProfileViewController.swift */; };
+		C06EA82E22CF9B8600CC2C3D /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06EA82D22CF9B8600CC2C3D /* CategoryTableViewCell.swift */; };
+		C0C37E8D22CE8734004E4ED2 /* ByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C37E8C22CE8734004E4ED2 /* ByCategoryViewController.swift */; };
+		C0F8307F22CB9AFD00AE3945 /* DetailProdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8307E22CB9AFD00AE3945 /* DetailProdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2689FBE3C2C6BD007315EE90 /* Pods-StoreAlmofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAlmofire.release.xcconfig"; path = "Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire.release.xcconfig"; sourceTree = "<group>"; };
+		B387C7FB6A7C91FE5230548B /* Pods-StoreAlmofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAlmofire.debug.xcconfig"; path = "Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire.debug.xcconfig"; sourceTree = "<group>"; };
+		C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		C013868A22D119C900BA8BAD /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		C0166CC122D3909300FFA781 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
+		C017C05622D7A8A40057F766 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		C018D57322CF97490022B621 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C046597922BF925300C8BF59 /* StoreAlmofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreAlmofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C046597C22BF925300C8BF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C046597E22BF925300C8BF59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C046598122BF925300C8BF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C046598322BF925500C8BF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C046598622BF925500C8BF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C046598822BF925500C8BF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C046598E22BFB34500C8BF59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C046599022BFD7FC00C8BF59 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		C046599222BFEABB00C8BF59 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C05B3C4722C10F25009CD57D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C05B3C4922C166D2009CD57D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C06EA82D22CF9B8600CC2C3D /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		C0C37E8C22CE8734004E4ED2 /* ByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByCategoryViewController.swift; sourceTree = "<group>"; };
+		C0F8307E22CB9AFD00AE3945 /* DetailProdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProdViewController.swift; sourceTree = "<group>"; };
+		F88E129CF9D13043143911AD /* Pods_StoreAlmofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreAlmofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F9E8421CEA68F39C4A8F5F /* Pods_StoreAlmofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3798149298999A8EA6DA06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88E129CF9D13043143911AD /* Pods_StoreAlmofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808ABFDBEBFCB389A4D34FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B387C7FB6A7C91FE5230548B /* Pods-StoreAlmofire.debug.xcconfig */,
+				2689FBE3C2C6BD007315EE90 /* Pods-StoreAlmofire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C046597022BF925300C8BF59 = {
 			isa = PBXGroup;
 			children = (
 				C046597B22BF925300C8BF59 /* StoreAlmofire */,
 				C046597A22BF925300C8BF59 /* Products */,
+				808ABFDBEBFCB389A4D34FC4 /* Pods */,
+				1B3798149298999A8EA6DA06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +105,24 @@
 			isa = PBXGroup;
 			children = (
 				C046597C22BF925300C8BF59 /* AppDelegate.swift */,
-				C046597E22BF925300C8BF59 /* ViewController.swift */,
+				C046598E22BFB34500C8BF59 /* LoginViewController.swift */,
+				C046599022BFD7FC00C8BF59 /* InitViewController.swift */,
+				C046599222BFEABB00C8BF59 /* TableViewCell.swift */,
+				C05B3C4722C10F25009CD57D /* RegisterViewController.swift */,
+				C05B3C4922C166D2009CD57D /* ProfileViewController.swift */,
+				C0F8307E22CB9AFD00AE3945 /* DetailProdViewController.swift */,
 				C046598022BF925300C8BF59 /* Main.storyboard */,
+				C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */,
 				C046598322BF925500C8BF59 /* Assets.xcassets */,
 				C046598522BF925500C8BF59 /* LaunchScreen.storyboard */,
 				C046598822BF925500C8BF59 /* Info.plist */,
+				C018D57322CF97490022B621 /* CategoryViewController.swift */,
+				C0C37E8C22CE8734004E4ED2 /* ByCategoryViewController.swift */,
+				C06EA82D22CF9B8600CC2C3D /* CategoryTableViewCell.swift */,
+				C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */,
+				C013868A22D119C900BA8BAD /* OrdersViewController.swift */,
+				C0166CC122D3909300FFA781 /* StoreViewController.swift */,
+				C017C05622D7A8A40057F766 /* Singleton.swift */,
 			);
 			path = StoreAlmofire;
 			sourceTree = "<group>";
@@ -71,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C046598B22BF925500C8BF59 /* Build configuration list for PBXNativeTarget "StoreAlmofire" */;
 			buildPhases = (
+				14FA4506FE1ED2A8B277665E /* [CP] Check Pods Manifest.lock */,
 				C046597522BF925300C8BF59 /* Sources */,
 				C046597622BF925300C8BF59 /* Frameworks */,
 				C046597722BF925300C8BF59 /* Resources */,
+				5E2DB593ABC52A7707078730 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +195,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14FA4506FE1ED2A8B277665E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoreAlmofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2DB593ABC52A7707078730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C046597522BF925300C8BF59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C046597F22BF925300C8BF59 /* ViewController.swift in Sources */,
+				C05B3C4A22C166D2009CD57D /* ProfileViewController.swift in Sources */,
+				C046598F22BFB34500C8BF59 /* LoginViewController.swift in Sources */,
+				C018D57422CF97490022B621 /* CategoryViewController.swift in Sources */,
+				C05B3C4822C10F25009CD57D /* RegisterViewController.swift in Sources */,
+				C046599322BFEABB00C8BF59 /* TableViewCell.swift in Sources */,
+				C0166CC422D3993600FFA781 /* StoreTableViewCell.swift in Sources */,
+				C0C37E8D22CE8734004E4ED2 /* ByCategoryViewController.swift in Sources */,
+				C0166CC222D3909300FFA781 /* StoreViewController.swift in Sources */,
 				C046597D22BF925300C8BF59 /* AppDelegate.swift in Sources */,
+				C013868B22D119C900BA8BAD /* OrdersViewController.swift in Sources */,
+				C013868922D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift in Sources */,
+				C0F8307F22CB9AFD00AE3945 /* DetailProdViewController.swift in Sources */,
+				C046599122BFD7FC00C8BF59 /* InitViewController.swift in Sources */,
+				C017C05722D7A8A40057F766 /* Singleton.swift in Sources */,
+				C06EA82E22CF9B8600CC2C3D /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +400,7 @@
 		};
 		C046598C22BF925500C8BF59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B387C7FB6A7C91FE5230548B /* Pods-StoreAlmofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +419,7 @@
 		};
 		C046598D22BF925500C8BF59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2689FBE3C2C6BD007315EE90 /* Pods-StoreAlmofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
