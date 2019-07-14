@@ -18,6 +18,7 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var itemProducts = [Product]()
     let codigos = [String]()
     var url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
+    var url_order = "http://127.0.0.1/~gracetoa/rest/index.php/orders/create_order"
     var total = 0.0
     
     override func viewDidLoad() {
@@ -73,19 +74,72 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
  
     @IBAction func doOrder(_ sender: UIButton) {
+       let user_id = UserDefaults.standard.string(forKey: "sesion")!
+       let products = Singleton.shared.itemsProduct
+
+        if products.isEmpty == false {
+            var codigos = [String]()
+            //for save product.codigo in db
+            for p in products {
+                codigos.append(p.codigo)
+            }
+            
+            let fields: Parameters = [
+                "id": user_id,
+                "items":  codigos
+            ]
+            
+            Alamofire.request(url_order,method: .post, parameters: fields).responseJSON{(response)in
+                print(response)
+                
+                if let result = response.result.value {
+                    let jsonData = result as! NSDictionary
+                    let error = jsonData["error"] as! Int
+                    let id_order = jsonData["orden_id"] as! Int
+                    
+                    if (error == 0) {
+                        Singleton.shared.removeAll()
+                        self.total = 0.0
+                        self.price.text = String(self.total)
+                        self.tableStore.reloadData()
+                        
+                        let alert = UIAlertController(title: "Success", message: "Order Updated Successfully", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "\("Your Order:")\(" ")\(id_order)\(" ")\(" has been processed")", style: .default, handler: { action in
+                            switch action.style{
+                            case .default:
+                                print("default")
+                                
+                            case .cancel:
+                                print("cancel")
+                                
+                            case .destructive:
+                                print("destructive")
+                                
+                            @unknown default:
+                                print("unknown")
+                            }}))
+                        self.present(alert, animated: true, completion: nil)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            
+                            alert.dismiss(animated: true, completion: nil)
+                        }
+                    }
+                    
+                }
+            }
+        }else{
+            let alert = UIAlertController(title: "Alert", message: "Cannot process your order, Your cart is empty!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
-    
-    
     func totalPriceProduct()  {
+        total = 0.0
         for price in Singleton.shared.itemsProduct {
             total += Double(price.precio_compra)!
         }
         price.text = "\("TOTAL:")\(" ")\(String(total))\("$")"
     }
     
-    
-    
-  
-
 }

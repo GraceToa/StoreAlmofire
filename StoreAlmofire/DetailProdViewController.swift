@@ -55,9 +55,8 @@ class DetailProdViewController: UIViewController {
         
         Singleton.shared.append(product)
      
-        
-        let alert = UIAlertController(title: "Alert", message: "Product add Store", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+        let alert = UIAlertController(title: "Add Product", message: "Do you want add it?", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     

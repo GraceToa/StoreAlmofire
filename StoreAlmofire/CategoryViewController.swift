@@ -62,11 +62,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
                 let anyObj: AnyObject? = jsonData["lineas"] as AnyObject
                 
                 self.parseJSON2(prod: anyObj!)
-                
-                for c in self.categories {
-                    print(c.name)
-                }
-                
+            
                 DispatchQueue.main.async {
                     self.tableC.reloadData()
                 }

@@ -32,4 +32,8 @@ public class Singleton
         guard position < itemsProduct.count else {return nil}
         return itemsProduct[position];
     }
+    
+    func removeAll()  {
+        itemsProduct.removeAll()
+    }
 }

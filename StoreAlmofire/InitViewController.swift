@@ -22,7 +22,6 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     var products = [Product]()
     var res: Any = ()
-    var product:Product!
     var id = ""
     
     var badgeCount = Int()
@@ -120,6 +119,8 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         return list
     }
+    
+  
     
     func setUpBadgeCountAndBarButton() {
         // badge label
