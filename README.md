@@ -1,5 +1,5 @@
 <table align="center"><tr><td align="center" width="9999">
-<img src="https://user-images.githubusercontent.com/10947013/57033303-e19d2f80-6c4c-11e9-8548-8afa9d734957.png" align="center" width="150" alt="Project icon">
+<img src="https://user-images.githubusercontent.com/10947013/61404117-0eb9bf80-a8d7-11e9-89ff-7b07a5491101.pnge">
 
 # MyPlaces
 
