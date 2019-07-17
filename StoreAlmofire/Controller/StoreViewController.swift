@@ -17,8 +17,6 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var itemProducts = [Product]()
     let codigos = [String]()
-    var url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
-    var url_order = "http://127.0.0.1/~gracetoa/rest/index.php/orders/create_order"
     var total = 0.0
     
     override func viewDidLoad() {
@@ -26,18 +24,20 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableStore.dataSource = self
         tableStore.delegate = self
         tableStore.reloadData()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
         totalPriceProduct()
     }
+    
+    // MARK: - UITableView methods
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Singleton.shared.getCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
         let cell = tableStore.dequeueReusableCell(withIdentifier: "cellStore", for: indexPath) as! StoreTableViewCell
         let p = Singleton.shared.getItemAt(position: indexPath.row)!
         cell.productS.text = p.producto
@@ -65,15 +65,10 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return [delete]
     }
     
-    // MARK: - Navigation
+    // MARK: - Private methods
     
-    func updateTotal(p: Product)  {
-        total -= Double(p.precio_compra)!
-        price.text = "\("TOTAL:")\(" ")\(String(total))\("$")"
-
-    }
- 
     @IBAction func doOrder(_ sender: UIButton) {
+       let url_order = "http://127.0.0.1/~gracetoa/rest/index.php/orders/create_order"
        let user_id = UserDefaults.standard.string(forKey: "sesion")!
        let products = Singleton.shared.itemsProduct
 
@@ -140,6 +135,12 @@ class StoreViewController: UIViewController, UITableViewDelegate, UITableViewDat
             total += Double(price.precio_compra)!
         }
         price.text = "\("TOTAL:")\(" ")\(String(total))\("$")"
+    }
+    
+    func updateTotal(p: Product)  {
+        total -= Double(p.precio_compra)!
+        price.text = "\("TOTAL:")\(" ")\(String(total))\("$")"
+        
     }
     
 }

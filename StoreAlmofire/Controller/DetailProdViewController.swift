@@ -20,7 +20,6 @@ class DetailProdViewController: UIViewController {
     
     var product: Product!
     var codigoP = ""
-    var url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
     
 
     override func viewDidLoad() {
@@ -37,7 +36,10 @@ class DetailProdViewController: UIViewController {
         
     }
     
+    // MARK: - Private method
+    
     func getImage(codigo: String) {
+        let url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
         let imgUrl = url_img + "\(codigo)"
         Alamofire.request(imgUrl).responseData { (response) in
             if response.error == nil {
@@ -48,13 +50,11 @@ class DetailProdViewController: UIViewController {
         }
     }
 
-
-    // MARK: - Navigation
+    // MARK: - Actions method
 
     @IBAction func addCar(_ sender: UIButton) {
         
         Singleton.shared.append(product)
-     
         let alert = UIAlertController(title: "Add Product", message: "Do you want add it?", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

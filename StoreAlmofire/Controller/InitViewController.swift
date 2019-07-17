@@ -2,12 +2,6 @@
 //  InitViewController.swift
 //  StoreAlmofire
 //
-/*
- <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
- <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
- 
- */
 //  Created by GraceToa on 23/06/2019.
 //  Copyright © 2019 GraceToa. All rights reserved.
 //
@@ -22,11 +16,8 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     var products = [Product]()
     var res: Any = ()
-    var id = ""
-    
     var badgeCount = Int()
     
-    var url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +31,19 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.setUpBadgeCountAndBarButton()
     }
     
+    // MARK: - UITableView methods
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let product = products[indexPath.row]
-        
         cell.product.text = product.producto
         cell.descriptionP.text = product.descripcion
+        
         let imgUrl = url_img + "\(product.codigo)"
         Alamofire.request(imgUrl).responseData { (response) in
             if response.error == nil {
@@ -73,13 +67,9 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
         }
     }
-
-    @IBAction func exit(_ sender: Any) {
-        UserDefaults.standard.removeObject(forKey: "sesion")
-        print("SESION USER CLOSED")
-        dismiss(animated: true, completion: nil)
-    }
     
+    
+    // MARK: - Private methods
     
     func getProducts()  {
         let url = URL(string: "http://127.0.0.1/~gracetoa/rest/index.php/products/allProductsiOS")
@@ -120,8 +110,6 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return list
     }
     
-  
-    
     func setUpBadgeCountAndBarButton() {
         // badge label
         let label = UILabel(frame: CGRect(x: 10, y: -05, width: 25, height: 25))
@@ -145,10 +133,13 @@ class InitViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let rightBarButtomItem = UIBarButtonItem(customView: rightButton)
         navigationItem.rightBarButtonItem = rightBarButtomItem
     }
+    
+    // MARK: - Actions methods
 
     @objc func rightButtonTouched() {
         performSegue(withIdentifier: "ShowOrders", sender: self)
     }
+    
     @objc func leftButtonTouched() {
         UserDefaults.standard.removeObject(forKey: "sesion")
         print("SESION USER CLOSED")

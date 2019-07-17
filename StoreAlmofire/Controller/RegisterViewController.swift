@@ -21,66 +21,69 @@ class RegisterViewController: UIViewController {
     
     var image: UIImage?
     var imagePicker: UIImagePickerController = UIImagePickerController()
-    var url_register = "http://127.0.0.1/~gracetoa/rest/index.php/login/createUser"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
     // MARK: - Actions Method
 
     @IBAction func register(_ sender: UIButton) {
-        
-        let fields: Parameters = [
-            "email":  emailTF.text!,
-            "passw": passwordTF.text!,
-            "name": nameTF.text!,
-            "lastname": lastnameTF.text!,
-            "address": addressTF.text!,
-            "country": countryTF.text!
-        ]
-        
-        let imageEnd = image?.jpegData(compressionQuality: 0.75)
-        let nameImage = UUID().uuidString
+        let url_register = "http://127.0.0.1/~gracetoa/rest/index.php/login/createUser"
+        if emailTF.text == "" || passwordTF.text == "" || nameTF.text == "" || lastnameTF.text == "" || addressTF.text == "" || countryTF.text == "" || image == nil {
+            let alertController = UIAlertController(title: "Error", message: "Please, fill in the empty field!", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion:  nil)
+            
+        }else{
+            let fields: Parameters = [
+                "email":  emailTF.text!,
+                "passw": passwordTF.text!,
+                "name": nameTF.text!,
+                "lastname": lastnameTF.text!,
+                "address": addressTF.text!,
+                "country": countryTF.text!
+            ]
+            
+            let imageEnd = image?.jpegData(compressionQuality: 0.75)
+            let nameImage = UUID().uuidString
+            Alamofire.upload(multipartFormData: { (multipartFormData) in
 
-        Alamofire.upload(multipartFormData: { (multipartFormData) in
+                multipartFormData.append(imageEnd!, withName: "image", fileName: "\(nameImage).jpeg", mimeType: "image/jpeg")
 
-            multipartFormData.append(imageEnd!, withName: "image", fileName: "\(nameImage).jpeg", mimeType: "image/jpeg")
+                for (key, val) in fields {
+                    multipartFormData.append((val as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
+                }
+            }, to: url_register) { (resultado) in
 
-            for (key, val) in fields {
-                multipartFormData.append((val as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
-            }
+                switch resultado {
 
-        }, to: url_register) { (resultado) in
-
-            switch resultado {
-
-            case .success(let upload, _, _):
-                upload.responseJSON(completionHandler: { (response) in
-                    print(response)
-                    if let result = response.result.value {
-                        let jsonData = result as! NSDictionary
-                        
-                       let resp = jsonData["error"] as! Int
-                        
-                        if (resp == 1) {
-                            self.cleanTextFields()
-                            let message = jsonData["message"] as! String
-                            let alert = UIAlertController(title: "SIGN UP", message: message, preferredStyle: .actionSheet)
-                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-                            }))
-                            self.present(alert, animated: true, completion: nil)
-                        }else {
-                            print("ERROR login")
+                case .success(let upload, _, _):
+                    upload.responseJSON(completionHandler: { (response) in
+                        print(response)
+                        if let result = response.result.value {
+                            let jsonData = result as! NSDictionary
+                            
+                           let resp = jsonData["error"] as! Int
+                            
+                            if (resp == 1) {
+                                self.cleanTextFields()
+                                let message = jsonData["message"] as! String
+                                let alert = UIAlertController(title: "SIGN UP", message: message, preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+                                }))
+                                self.present(alert, animated: true, completion: nil)
+                            }else {
+                                print("ERROR login")
+                            }
                         }
-                    }
-                })
-            case .failure(let error):
-                print("Error load image", error)
+                    })
+                case .failure(let error):
+                    print("Error load image", error)
+                }
             }
-
         }
     }
     

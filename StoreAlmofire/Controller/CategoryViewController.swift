@@ -11,18 +11,16 @@ import Alamofire
 
 class CategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
     @IBOutlet weak var tableC: UITableView!
     
     var categories = [Category]()
-    var url_categories = "http://127.0.0.1/~gracetoa/rest/index.php/lineas"
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getCategories()
     }
+    
+    // MARK: - UITableView method
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
@@ -31,15 +29,14 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableC.dequeueReusableCell(withIdentifier: "cel", for: indexPath) as! CategoryTableViewCell
         let c = categories[indexPath.row]
-        
         cell.nameCateg.text = c.name
-   
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowByCategory", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowByCategory" {
             if let id = tableC.indexPathForSelectedRow {
@@ -50,12 +47,12 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    // MARK: - Private method
     
     func getCategories()  {
+        let url_categories = "http://127.0.0.1/~gracetoa/rest/index.php/lineas"
         Alamofire.request(url_categories).responseJSON{(response) in
-            
-                        print(response)
-            
+                        
             if let result = response.result.value {
                 let jsonData = result as! NSDictionary
                 
@@ -84,8 +81,6 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
             }
         }
     }
-
-
 }
 
 

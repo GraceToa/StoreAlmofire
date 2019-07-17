@@ -19,8 +19,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var countryTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     
-    var url_user = "http://127.0.0.1/~gracetoa/rest/index.php/login/user_ios"
-    var url_edit = "http://127.0.0.1/~gracetoa/rest/index.php/login/edit_user"
     var user_id = ""
     var resp = ""
     
@@ -29,16 +27,16 @@ class ProfileViewController: UIViewController {
         getUserFromBD()
     }
     
+    // MARK: - Private method
+    
     func getUserFromBD() {
         user_id = UserDefaults.standard.string(forKey: "sesion")!
-        
+        let url_user = "http://127.0.0.1/~gracetoa/rest/index.php/login/user_ios"
         let fields: Parameters = [
             "id": user_id
         ]
         
         Alamofire.request(url_user,method: .post, parameters: fields).responseJSON{(response)in
-            print(response)
-            
             if let result = response.result.value {
                 let jsonData = result as! NSDictionary
                 let error = jsonData["error"] as! Int
@@ -58,7 +56,7 @@ class ProfileViewController: UIViewController {
                                 if response.error == nil {
                                     if let data = response.data {
                                         self.imageU.image = UIImage(data: data)
-                                        self.imageU.makeRounded()
+//                                        self.imageU.makeRounded()
                                     }
                                 }
                             }
@@ -69,17 +67,13 @@ class ProfileViewController: UIViewController {
                 }
             }
         }
-        
-        
-        print("PROBAR ITEMS 2")
-        for i in Singleton.shared.itemsProduct {
-            print(i.codigo)
-        }
     }
  
     // MARK: - Actions
 
     @IBAction func edit(_ sender: UIButton) {
+        let url_edit = "http://127.0.0.1/~gracetoa/rest/index.php/login/edit_user"
+
         let fields: Parameters = [
             "email": emailTF.text!,
             "name": nameTF.text!,
@@ -91,7 +85,6 @@ class ProfileViewController: UIViewController {
 
         Alamofire.request(url_edit, method: .post, parameters: fields)
             .responseJSON { response in
-//                print(response)
                 if let result = response.value {
                     let jsonData = result as! NSDictionary
                     self.resp = (jsonData.value(forKey: "message") as! String?)!
@@ -108,7 +101,6 @@ class ProfileViewController: UIViewController {
     
     @IBAction func back(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
-      
     }
 }
 

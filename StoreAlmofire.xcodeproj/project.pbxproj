@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		67F9E8421CEA68F39C4A8F5F /* Pods_StoreAlmofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88E129CF9D13043143911AD /* Pods_StoreAlmofire.framework */; };
 		C013868922D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */; };
-		C013868B22D119C900BA8BAD /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013868A22D119C900BA8BAD /* OrdersViewController.swift */; };
+		C013868B22D119C900BA8BAD /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013868A22D119C900BA8BAD /* OrderViewController.swift */; };
 		C0166CC222D3909300FFA781 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0166CC122D3909300FFA781 /* StoreViewController.swift */; };
 		C0166CC422D3993600FFA781 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */; };
 		C017C05722D7A8A40057F766 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017C05622D7A8A40057F766 /* Singleton.swift */; };
-		C018B34022DB2BFD00381147 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018B33F22DB2BFD00381147 /* OrdersTableViewCell.swift */; };
+		C018B34022DB2BFD00381147 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018B33F22DB2BFD00381147 /* OrderTableViewCell.swift */; };
 		C018D57422CF97490022B621 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018D57322CF97490022B621 /* CategoryViewController.swift */; };
+		C01A3CA222DD286900E3D045 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A3CA122DD286900E3D045 /* OrdersViewController.swift */; };
+		C01A3CA422DD294700E3D045 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A3CA322DD294700E3D045 /* OrdersTableViewCell.swift */; };
 		C046597D22BF925300C8BF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046597C22BF925300C8BF59 /* AppDelegate.swift */; };
 		C046598222BF925300C8BF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C046598022BF925300C8BF59 /* Main.storyboard */; };
 		C046598422BF925500C8BF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C046598322BF925500C8BF59 /* Assets.xcassets */; };
@@ -33,12 +35,14 @@
 		2689FBE3C2C6BD007315EE90 /* Pods-StoreAlmofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAlmofire.release.xcconfig"; path = "Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire.release.xcconfig"; sourceTree = "<group>"; };
 		B387C7FB6A7C91FE5230548B /* Pods-StoreAlmofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAlmofire.debug.xcconfig"; path = "Target Support Files/Pods-StoreAlmofire/Pods-StoreAlmofire.debug.xcconfig"; sourceTree = "<group>"; };
 		C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByCategoryTableViewCell.swift; sourceTree = "<group>"; };
-		C013868A22D119C900BA8BAD /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		C013868A22D119C900BA8BAD /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		C0166CC122D3909300FFA781 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		C017C05622D7A8A40057F766 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		C018B33F22DB2BFD00381147 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		C018B33F22DB2BFD00381147 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		C018D57322CF97490022B621 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		C01A3CA122DD286900E3D045 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		C01A3CA322DD294700E3D045 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		C046597922BF925300C8BF59 /* StoreAlmofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreAlmofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C046597C22BF925300C8BF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C046598122BF925300C8BF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,28 +110,54 @@
 		C046597B22BF925300C8BF59 /* StoreAlmofire */ = {
 			isa = PBXGroup;
 			children = (
+				C0A7A9AE22DF356300F66A61 /* Model */,
+				C0A7A9AD22DF355A00F66A61 /* View */,
+				C0A7A9AC22DF354900F66A61 /* Controller */,
+				C046598022BF925300C8BF59 /* Main.storyboard */,
+				C046598322BF925500C8BF59 /* Assets.xcassets */,
+				C046598522BF925500C8BF59 /* LaunchScreen.storyboard */,
 				C046597C22BF925300C8BF59 /* AppDelegate.swift */,
+				C046598822BF925500C8BF59 /* Info.plist */,
+			);
+			path = StoreAlmofire;
+			sourceTree = "<group>";
+		};
+		C0A7A9AC22DF354900F66A61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C046598E22BFB34500C8BF59 /* LoginViewController.swift */,
 				C046599022BFD7FC00C8BF59 /* InitViewController.swift */,
-				C046599222BFEABB00C8BF59 /* TableViewCell.swift */,
 				C05B3C4722C10F25009CD57D /* RegisterViewController.swift */,
 				C05B3C4922C166D2009CD57D /* ProfileViewController.swift */,
 				C0F8307E22CB9AFD00AE3945 /* DetailProdViewController.swift */,
-				C046598022BF925300C8BF59 /* Main.storyboard */,
-				C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */,
-				C046598322BF925500C8BF59 /* Assets.xcassets */,
-				C046598522BF925500C8BF59 /* LaunchScreen.storyboard */,
-				C046598822BF925500C8BF59 /* Info.plist */,
 				C018D57322CF97490022B621 /* CategoryViewController.swift */,
 				C0C37E8C22CE8734004E4ED2 /* ByCategoryViewController.swift */,
+				C013868A22D119C900BA8BAD /* OrderViewController.swift */,
+				C01A3CA122DD286900E3D045 /* OrdersViewController.swift */,
+				C0166CC122D3909300FFA781 /* StoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0A7A9AD22DF355A00F66A61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C046599222BFEABB00C8BF59 /* TableViewCell.swift */,
+				C0166CC322D3993600FFA781 /* StoreTableViewCell.swift */,
 				C06EA82D22CF9B8600CC2C3D /* CategoryTableViewCell.swift */,
 				C013868822D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift */,
-				C013868A22D119C900BA8BAD /* OrdersViewController.swift */,
-				C0166CC122D3909300FFA781 /* StoreViewController.swift */,
-				C017C05622D7A8A40057F766 /* Singleton.swift */,
-				C018B33F22DB2BFD00381147 /* OrdersTableViewCell.swift */,
+				C018B33F22DB2BFD00381147 /* OrderTableViewCell.swift */,
+				C01A3CA322DD294700E3D045 /* OrdersTableViewCell.swift */,
 			);
-			path = StoreAlmofire;
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0A7A9AE22DF356300F66A61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C017C05622D7A8A40057F766 /* Singleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,15 +281,17 @@
 				C05B3C4822C10F25009CD57D /* RegisterViewController.swift in Sources */,
 				C046599322BFEABB00C8BF59 /* TableViewCell.swift in Sources */,
 				C0166CC422D3993600FFA781 /* StoreTableViewCell.swift in Sources */,
-				C018B34022DB2BFD00381147 /* OrdersTableViewCell.swift in Sources */,
+				C018B34022DB2BFD00381147 /* OrderTableViewCell.swift in Sources */,
 				C0C37E8D22CE8734004E4ED2 /* ByCategoryViewController.swift in Sources */,
 				C0166CC222D3909300FFA781 /* StoreViewController.swift in Sources */,
 				C046597D22BF925300C8BF59 /* AppDelegate.swift in Sources */,
-				C013868B22D119C900BA8BAD /* OrdersViewController.swift in Sources */,
+				C01A3CA422DD294700E3D045 /* OrdersTableViewCell.swift in Sources */,
+				C013868B22D119C900BA8BAD /* OrderViewController.swift in Sources */,
 				C013868922D0C6DF00BA8BAD /* ByCategoryTableViewCell.swift in Sources */,
 				C0F8307F22CB9AFD00AE3945 /* DetailProdViewController.swift in Sources */,
 				C046599122BFD7FC00C8BF59 /* InitViewController.swift in Sources */,
 				C017C05722D7A8A40057F766 /* Singleton.swift in Sources */,
+				C01A3CA222DD286900E3D045 /* OrdersViewController.swift in Sources */,
 				C06EA82E22CF9B8600CC2C3D /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

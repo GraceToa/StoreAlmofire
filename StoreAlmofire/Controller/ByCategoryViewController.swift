@@ -18,8 +18,6 @@ class ByCategoryViewController: UIViewController,UITableViewDelegate,UITableView
     var category: Category!
     var products = [Product]()
     var idCategory = ""
-    var url_categ = "http://127.0.0.1/~gracetoa/rest/index.php/products/by_typeProduct/"
-    var url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +27,14 @@ class ByCategoryViewController: UIViewController,UITableViewDelegate,UITableView
         getProductByCategory()
     }
     
+    // MARK: - UITableView method
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return  products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let url_img = "http://127.0.0.1/~gracetoa/rest/public/img/productos/"
         let cell = tableByCateg.dequeueReusableCell(withIdentifier: "cellByCat", for: indexPath) as! ByCategoryTableViewCell
         let p = products[indexPath.row]
         cell.productByC.text = p.producto
@@ -48,6 +49,7 @@ class ByCategoryViewController: UIViewController,UITableViewDelegate,UITableView
         }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "ShowDetailFromByCategory", sender: self)
     }
@@ -62,9 +64,10 @@ class ByCategoryViewController: UIViewController,UITableViewDelegate,UITableView
     }
 
     
-    // MARK: - Navigation
+    // MARK: - Private method
 
     func getProductByCategory()  {
+        let url_categ = "http://127.0.0.1/~gracetoa/rest/index.php/products/by_typeProduct/"
         let url = url_categ + "\(idCategory)"
        
         Alamofire.request(url).responseJSON{(response) in
@@ -79,11 +82,6 @@ class ByCategoryViewController: UIViewController,UITableViewDelegate,UITableView
             DispatchQueue.main.async {
                 self.tableByCateg.reloadData()
                 }
-                print("BY PRO")
-                for p in self.products {
-                    print(p.producto)
-                }
-
             }
         }
     
