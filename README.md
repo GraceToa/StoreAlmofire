@@ -1,28 +1,24 @@
 <table align="center"><tr><td align="center" width="9999">
 <img src="https://user-images.githubusercontent.com/10947013/61404117-0eb9bf80-a8d7-11e9-89ff-7b07a5491101.png">
 
-# MyPlaces
+# STORE ALMOFIRE
 
-MyPlaces App for macOS
+StoreAlmofire App for macOS, with Alamofire Framework
 </td></tr></table>
 
-<strong>MyPlaces:</strong> is an app developed to save favorite places or that interest us, our city or any place in the world.
-Through a previous Authentication by email and password, the user accesses his personal account in which he has the option of adding a place to his board, in each place he can take a photo or choose from the gallery of the device, the name of the place, a description, and add the exact geolocation of the place.
+<strong>StoreAlmofire:</strong> is an app
 
-The TabBar Navigation Bar contains 3 options, the first allows the display of the board where the places are added, the second contains data of the user profile obtained at the time of registration, the third a map that contains the annotations of the places in the map.
 
-The data of both the users and their places are stored and queried in Real Time of FIREBASE
+The data of both the users and their orders are stored and queried in Mysql Database 
 
 ## Feature
 
 
 - Switf 5
 - Xcode 10.2.1
-- Firebase
-    - RealTime Database
-    - Storage
+- Alamofire Framework
 - CocoaPods
-- iPhone 8
+- iPhone XR
 
 <table border="3" bordercolor="black" align="center">
     <tr>
