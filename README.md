@@ -1,15 +1,21 @@
 <table align="center"><tr><td align="center" width="9999">
 <img src="https://user-images.githubusercontent.com/10947013/61404117-0eb9bf80-a8d7-11e9-89ff-7b07a5491101.png" width="50" >
 
-# STORE ALMOFIRE
+# Sotre Almofire Framework
 
 StoreAlmofire App for macOS, with Alamofire Framework
 </td></tr></table>
 
-<strong>StoreAlmofire:</strong> is an app
-
-
-The data of both the users and their orders are stored and queried in Mysql Database 
+<strong>StoreAlmofire:</strong> is an app that allows you to buy items related to transportation in general,
+the user has the option to register in the app by entering their personal data, and access the app with their email and password, once checked their data is given access to the store, it contains four tabs:
+the first (home) displays the list of all products
+the second (profile) shows the user profile, has editing options
+the third (categories) option of the products by categories
+the fourth (orders) lists the orders made, each row displays in another CV the detail of the order.
+The navigation bar contains 2 buttons:
+- the shopping cart that shows the amount of products added to this, when you click this it takes us to a detail view of added products, its total amount, the option to eliminate some product and finally place the order, which then we can see them in the orders tab
+- the exit button to close the session.
+The user data as well as the orders made from it are stored in a MySQL database, the Codeigniter Framework was used for the creation of the backend, which is responsible for the connection to the database and obtaining data through queries, as well as also the service of a REST API for the consumption of services from the app.
 
 ## Feature
 
