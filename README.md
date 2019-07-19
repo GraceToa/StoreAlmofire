@@ -52,6 +52,6 @@ The data of both the users and their orders are stored and queried in Mysql Data
 </table>
 <table>
     <tr>
-        <td><img src="https://user-images.githubusercontent.com/10947013/61525810-74ae6000-aa19-11e9-8114-e1d6282a9483.png"              width="450" alt="order"></td>      
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525810-74ae6000-aa19-11e9-8114-e1d6282a9483.png"              width="650" alt="order"></td>      
       </tr>
  </table>
