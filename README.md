@@ -25,9 +25,9 @@ The data of both the users and their orders are stored and queried in Mysql Data
         <th colspan="3">iPhone 8 12-2 </th> 
     </tr>
     <tr>
-        <td><img src="https://user-images.githubusercontent.com/10947013/61524597-08caf800-aa17-11e9-999a-5a5a061fa7ba.png" width="250" alt="init"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/61524785-78d97e00-aa17-11e9-9e29-bda0c03dbcfa.png"             width="250" alt="register"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/61524847-973f7980-aa17-11e9-83c6-6c7707305a42.png"              width="250" alt="login"></td>      
+        <td><img src="https://user-images.githubusercontent.com/10947013/61524597-08caf800-aa17-11e9-999a-5a5a061fa7ba.png" width="200" alt="init"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61524785-78d97e00-aa17-11e9-9e29-bda0c03dbcfa.png"             width="200" alt="register"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61524847-973f7980-aa17-11e9-83c6-6c7707305a42.png"              width="200" alt="login"></td>      
     </tr>
         <tr>
         <td><img src="https://user-images.githubusercontent.com/10947013/61524912-bdfdb000-aa17-11e9-981e-42066323d933.png"             width="250" alt="list"></td>
