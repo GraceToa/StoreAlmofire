@@ -1,7 +1,7 @@
 <table align="center"><tr><td align="center" width="9999">
 <img src="https://user-images.githubusercontent.com/10947013/61404117-0eb9bf80-a8d7-11e9-89ff-7b07a5491101.png" width="50" >
 
-# Sotre Almofire Framework
+# Store Almofire Framework
 
 StoreAlmofire App for macOS, with Alamofire Framework
 </td></tr></table>
@@ -23,7 +23,9 @@ The user data as well as the orders made from it are stored in a MySQL database,
 - Alamofire Framework
 - CocoaPods
 - iPhone XR
-
+- Backend Codeigniter "RestCodeigniter repo"
+- Api Rest
+- MySQL
 
 <table border="3" bordercolor="black" align="center">
     <tr>
