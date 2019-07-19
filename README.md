@@ -40,9 +40,9 @@ The data of both the users and their orders are stored and queried in Mysql Data
         <td><img src="https://user-images.githubusercontent.com/10947013/61525300-64e24c00-aa18-11e9-8aaa-88539ede0ad7.png"              width="250" alt="add"></td>      
     </tr>
     <tr>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717835-596f4f00-767c-11e9-9872-b49ee46d80a7.png"             width="250" alt="login"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717903-7c016800-767c-11e9-981d-ba0ab0c53a4a.png"             width="250" alt="register"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717951-90456500-767c-11e9-860a-6b46642b7cfa.png"              width="250" alt="profile"></td>      
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525381-96f3ae00-aa18-11e9-96a5-081662f495f0.png"             width="250" alt="shop car"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525437-b5f24000-aa18-11e9-80e3-8772b8815084.png"             width="250" alt="delete"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525486-d15d4b00-aa18-11e9-8657-f8c92622a3a0.png"              width="250" alt="delete"></td>      
     </tr>
 </table>
 
