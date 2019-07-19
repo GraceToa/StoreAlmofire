@@ -8,27 +8,26 @@ StoreAlmofire App for macOS, with Alamofire Framework
 
 <strong>StoreAlmofire:</strong> is an app that allows you to buy items related to transportation in general,
 the user has the option to register in the app by entering their personal data, and access the app with their email and password, once checked their data is given access to the store, it contains four tabs:
-the first (home) displays the list of all products
-the second (profile) shows the user profile, has editing options
-the third (categories) option of the products by categories
-the fourth (orders) lists the orders made, each row displays in another CV the detail of the order.
+- the first (home) displays the list of all products
+- the second (profile) shows the user profile, has editing options
+- the third (categories) option of the products by categories
+- the fourth (orders) lists the orders made, each row displays in another CV the detail of the order.
 The navigation bar contains 2 buttons:
 - the shopping cart that shows the amount of products added to this, when you click this it takes us to a detail view of added products, its total amount, the option to eliminate some product and finally place the order, which then we can see them in the orders tab
 - the exit button to close the session.
 The user data as well as the orders made from it are stored in a MySQL database, the Codeigniter Framework was used for the creation of the backend, which is responsible for the connection to the database and obtaining data through queries, as well as also the service of a REST API for the consumption of services from the app.
 
 ## Feature
-
-
 - Switf 5
 - Xcode 10.2.1
 - Alamofire Framework
 - CocoaPods
 - iPhone XR
 
+
 <table border="3" bordercolor="black" align="center">
     <tr>
-        <th colspan="3">iPhone 8 12-2 </th> 
+        <th colspan="3">iPhone XR emulator </th> 
     </tr>
     <tr>
         <td><img src="https://user-images.githubusercontent.com/10947013/61524597-08caf800-aa17-11e9-999a-5a5a061fa7ba.png" width="220" alt="init"></td>
