@@ -26,8 +26,8 @@ The data of both the users and their orders are stored and queried in Mysql Data
     </tr>
     <tr>
         <td><img src="https://user-images.githubusercontent.com/10947013/61524597-08caf800-aa17-11e9-999a-5a5a061fa7ba.png" width="250" alt="init"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57152069-bba19780-6dd2-11e9-87ca-1292e252e758.png"             width="250" alt="register"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57151966-7da47380-6dd2-11e9-92b0-aee2edb1fb70.png"              width="250" alt="profile"></td>      
+        <td><img src="https://user-images.githubusercontent.com/10947013/61524785-78d97e00-aa17-11e9-9e29-bda0c03dbcfa.png"             width="250" alt="register"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61524847-973f7980-aa17-11e9-83c6-6c7707305a42.png"              width="250" alt="login"></td>      
     </tr>
         <tr>
         <td><img src="https://user-images.githubusercontent.com/10947013/57717521-bf0f0b80-767b-11e9-8f92-1803804f0c82.png"             width="250" alt="login"></td>
