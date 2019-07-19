@@ -35,9 +35,9 @@ The data of both the users and their orders are stored and queried in Mysql Data
         <td><img src="https://user-images.githubusercontent.com/10947013/61525054-f7ceb680-aa17-11e9-961d-5cd1797f9e74.png"              width="250" alt="categories"></td>      
     </tr>
      <tr>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717704-16ad7700-767c-11e9-9442-0ce78c5c2ea5.png"             width="250" alt="login"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717741-2dec6480-767c-11e9-9f10-e3a769b2d03b.png"             width="250" alt="register"></td>
-        <td><img src="https://user-images.githubusercontent.com/10947013/57717781-43fa2500-767c-11e9-88f1-b2df085432a9.png"              width="250" alt="profile"></td>      
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525167-26e52800-aa18-11e9-8339-4a47e39bd2ee.png"             width="250" alt="category"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525235-4419f680-aa18-11e9-999a-4dcda80c3c84.png"             width="250" alt="add"></td>
+        <td><img src="https://user-images.githubusercontent.com/10947013/61525300-64e24c00-aa18-11e9-8aaa-88539ede0ad7.png"              width="250" alt="add"></td>      
     </tr>
     <tr>
         <td><img src="https://user-images.githubusercontent.com/10947013/57717835-596f4f00-767c-11e9-9872-b49ee46d80a7.png"             width="250" alt="login"></td>
