@@ -31,7 +31,7 @@ Grace Toa  (App Developer)
 - MySQL
 
  ## Link
- - [Yootube]([SQlite](https://youtu.be/BcNAb_s-wiQ))
+ - [Youtube] [SQlite](https://youtu.be/BcNAb_s-wiQ)
 
 <table border="3" bordercolor="black" align="center">
     <tr>
