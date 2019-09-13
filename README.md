@@ -17,6 +17,9 @@ The navigation bar contains 2 buttons:
 - the exit button to close the session.
 The user data as well as the orders made from it are stored in a MySQL database, the Codeigniter Framework was used for the creation of the backend, which is responsible for the connection to the database and obtaining data through queries, as well as also the service of a REST API for the consumption of services from the app.
 
+## Autor
+Grace Toa  (App Developer)
+
 ## Feature
 - Switf 5
 - Xcode 10.2.1
