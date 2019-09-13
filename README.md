@@ -31,7 +31,8 @@ Grace Toa  (App Developer)
 - MySQL
 
  ## Link
- - [Youtube] [StoreAlmofire](https://youtu.be/BcNAb_s-wiQ)
+ - StoreAlmofire [Youtube](https://youtu.be/BcNAb_s-wiQ)
+ 
 
 <table border="3" bordercolor="black" align="center">
     <tr>
